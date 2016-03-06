@@ -1,0 +1,13 @@
+#qiaozh_lin
+#2015-11-19 45:28
+
+CC=g++
+CFLAGS=-g -w `pkg-config --cflags--libs  opencv`
+
+all: img_seg
+
+img_seg: main.cpp segment.cpp datastrcture.cpp
+	$(CC) $(CFLAGS) $^ -o $@ 
+
+clean:
+	rm img_seg

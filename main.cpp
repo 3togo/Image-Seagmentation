@@ -29,7 +29,7 @@ int main(int argc, char* argv[])
 	imgRes=Label(imgInd, regnum);	
 	imwrite("./result.jpg",imgRes );
 	cvNamedWindow("result", CV_WINDOW_AUTOSIZE);
-    imshow("result", imgRes);
+        imshow("result", imgRes);
 	waitKey(0);
 	return 0;
 }

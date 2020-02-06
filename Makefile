@@ -2,8 +2,8 @@
 #2015-11-19 45:28
 
 CC=g++
-CFLAGS=-g -w `pkg-config opencv --cflags  opencv`
-CFLAGS1=`pkg-config --libs opencv`
+CFLAGS=-g -w `pkg-config --cflags  opencv4`
+CFLAGS1=`pkg-config --libs opencv4`
 
 all: img_seg
 
